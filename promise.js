@@ -1,34 +1,4 @@
-/*var res=fetch("https://restcountries.com/v2/all")
-res.then((data)=>data.json()).then((data1)=>{
-    console.log(data1)
-    for(let i=0;i<data1.length;i++){
-        var two=document.createElement("li");
-        two.innerHTML=`
-        <div class="card" style="width: 18rem;">
-  <img src="${data1[i].flag}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">${data1[i].capital}</h5>
-    <p class="card-text">${data1[i].region}</p>
-    <p class="card-text">${data1[i].latlng}</p>
-    <p class="card-text">${data1[i].name}</p>
-    <p class="card-text">${data1[i].callingCodes}</p>
-    <button type="button" class="btn btn-info">
-    <a href=${Math.round(data1[i].timezones - 273.15)}> weather </a>
-  </button>
 
-   
-</div>
-</div>
- 
-
-       `
-        
-    
-    document.body.append(two)
-    }
-})
-
-*/
 const API_URL = 'https://restcountries.com/v2/all';
 
 const displayCards = (data) => {
